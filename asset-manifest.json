@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/selvarea-app/static/css/main.6e7da8fb.css",
-    "main.js": "/selvarea-app/static/js/main.e64312e6.js",
-    "index.html": "/selvarea-app/index.html",
-    "main.6e7da8fb.css.map": "/selvarea-app/static/css/main.6e7da8fb.css.map",
-    "main.e64312e6.js.map": "/selvarea-app/static/js/main.e64312e6.js.map"
+    "main.css": "/snsh1n3/selvarea-app/static/css/main.6e7da8fb.css",
+    "main.js": "/snsh1n3/selvarea-app/static/js/main.e64312e6.js",
+    "index.html": "/snsh1n3/selvarea-app/index.html",
+    "main.6e7da8fb.css.map": "/snsh1n3/selvarea-app/static/css/main.6e7da8fb.css.map",
+    "main.e64312e6.js.map": "/snsh1n3/selvarea-app/static/js/main.e64312e6.js.map"
   },
   "entrypoints": [
     "static/css/main.6e7da8fb.css",
