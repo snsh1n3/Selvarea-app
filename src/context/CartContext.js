@@ -1,16 +1,13 @@
 import React, { createContext, useReducer, useContext } from 'react';
 
-// 1. Crear el Contexto
 const CartContext = createContext();
 
-// 2. Definir el Reducer
 const cartReducer = (state, action) => {
   switch (action.type) {
     case 'ADD_ITEM':
       const existingItemIndex = state.findIndex(item => item.id === action.payload.id);
       if (existingItemIndex > -1) {
-        // Si el item ya existe, podrías aumentar la cantidad o simplemente no añadirlo de nuevo
-        return state; // Por ahora, no añadimos duplicados.
+        return state;
       }
       return [...state, action.payload];
     case 'REMOVE_ITEM':
@@ -22,7 +19,6 @@ const cartReducer = (state, action) => {
   }
 };
 
-// 3. Crear el Provider
 export const CartProvider = ({ children }) => {
   const [cartItems, dispatch] = useReducer(cartReducer, []); // Estado inicial: carrito vacío
 
@@ -45,7 +41,6 @@ export const CartProvider = ({ children }) => {
   );
 };
 
-// 4. Hook personalizado para consumir el Contexto
 export const useCart = () => {
   const context = useContext(CartContext);
   if (!context) {

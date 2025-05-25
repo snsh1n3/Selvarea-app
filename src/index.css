@@ -2,19 +2,15 @@ body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Añadido para mejor manejo de layout */
+  box-sizing: border-box;
 }
-
-/* Otros estilos globales de download.css, como los del body, header, nav, etc. */
-/* Es recomendable modularizar estos estilos en los componentes individuales, pero para empezar, puedes copiarlos aquí */
-
 header {
   background-color: #fff;
   padding: 20px 0;
   position: sticky;
   top: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  z-index: 1000;
 }
 
 .top-bar {
@@ -35,7 +31,6 @@ nav {
   font-size: 22px;
 }
 
-/* Los estilos de .nav-center y .nav-links necesitarán ser ajustados para React Router */
 .nav-center {
   display: flex;
   justify-content: center;
@@ -106,7 +101,7 @@ nav ul li a {
 .carousel {
   width: 100%;
   z-index: 1;
-  height: 626px; /* Altura fija, puede ser problemático en responsividad */
+  height: 626px;
   margin: 0 auto;
   overflow: hidden;
   padding: 0 50px;
@@ -196,15 +191,15 @@ h2 {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: wrap; /* Permitir que los productos se envuelvan en pantallas pequeñas */
+  flex-wrap: wrap;
 }
 
 .product {
-  width: 30%; /* Ajustado para que quepan 3 en una fila con gap */
+  width: 30%;
   text-align: center;
-  box-sizing: border-box; /* Importante para el padding/border no afecte el ancho */
+  box-sizing: border-box;
   padding: 10px;
-  margin-bottom: 20px; /* Espacio entre filas */
+  margin-bottom: 20px;
 }
 
 .product img {
@@ -212,7 +207,6 @@ h2 {
   height: auto;
 }
 
-/* Media Queries */
 @media screen and (max-width: 768px) {
   .nav-center {
     flex-direction: column;
@@ -237,7 +231,7 @@ h2 {
   }
 
   .products {
-    flex-direction: column; /* Cambiado a columna para productos en móvil */
+    flex-direction: column;
     gap: 10px;
   }
 
@@ -248,7 +242,7 @@ h2 {
 
   .carousel {
     padding: 0 20px;
-    height: auto; /* Ajustar altura automáticamente en móvil */
+    height: auto;
   }
 }
 
@@ -266,9 +260,8 @@ h2 {
   }
 }
 
-/* Estilos para el modal */
 .modal {
-  display: flex; /* Usar flexbox para centrar */
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -289,7 +282,7 @@ h2 {
   max-width: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  position: relative; /* Para posicionar el botón de cerrar */
+  position: relative;
 }
 
 .modal-content h2 {
@@ -297,7 +290,7 @@ h2 {
 }
 
 .modal-content input {
-  width: calc(100% - 22px); /* Ajuste para padding/border */
+  width: calc(100% - 22px);
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
@@ -321,7 +314,7 @@ h2 {
 
 .close {
   color: #aaa;
-  float: right; /* Esto podría causar problemas con flexbox, mejor absolute */
+  float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;

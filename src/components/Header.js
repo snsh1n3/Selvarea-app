@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import Modal from './Modal';
-import useSearch from '../hooks/useSearch'; // Hook personalizado para la búsqueda
-import { useCart } from '../context/CartContext'; // Usar el contexto del carrito
+import useSearch from '../hooks/useSearch';
+import { useCart } from '../context/CartContext';
 
 function Header() {
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
-  const { cartItems } = useCart(); // Obtener el estado del carrito
+  const { cartItems } = useCart();
   const { searchQuery, searchResults, performSearch, handleSearchInputChange } = useSearch();
 
   const handleOpenSearchModal = () => setIsSearchModalOpen(true);

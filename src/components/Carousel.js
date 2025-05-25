@@ -4,22 +4,18 @@ function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     "/Imagenes/image1.png",
-    // Agrega más imágenes si las tienes, por ejemplo:
-    // "/Imagenes/image2.png",
-    // "/Imagenes/image3.png",
   ];
 
   const showSlide = (index) => {
     setCurrentSlide((index + slides.length) % slides.length);
   };
 
-  // Autoplay functionality (optional)
   useEffect(() => {
     const interval = setInterval(() => {
       showSlide(currentSlide + 1);
-    }, 5000); // Cambia de slide cada 5 segundos
+    }, 5000); 
     return () => clearInterval(interval);
-  }, [currentSlide, slides.length]); // Dependencias para el efecto
+  }, [currentSlide, slides.length])
 
   return (
     <section id="carousel" className="carousel">

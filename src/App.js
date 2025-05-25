@@ -8,7 +8,6 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    // <CartProvider> // Si el proveedor no se envuelve en index.js
       <div>
         <Header />
         <main>
@@ -17,12 +16,9 @@ function App() {
             <Route path="/nosotros" element={<AboutUs />} />
             <Route path="/tienda" element={<Shop />} />
             <Route path="/contacto" element={<Contact />} />
-            {/* Si tuvieras una página de contacto */}
-            {/* <Route path="/contacto" element={<Contact />} /> */}
           </Routes>
         </main>
       </div>
-    // </CartProvider>
   );
 }
 

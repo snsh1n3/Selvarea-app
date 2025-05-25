@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
-import axios from 'axios'; // Para peticiones HTTP
+import axios from 'axios';
 
 function Shop() {
   const [products, setProducts] = useState([]);
@@ -8,13 +8,9 @@ function Shop() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Simulación de una petición a una API REST para obtener productos
     const fetchProducts = async () => {
       try {
-        // Si tuvieras una API real, la URL iría aquí.
-        // Ejemplo con una API mock:
         // const response = await axios.get('https://my-json-server.typicode.com/your-username/your-repo/products');
-        // Para este ejemplo, simulamos los datos directamente:
         const mockProducts = [
           { id: 1, name: "Love Birds", price: "800000", image: "/Imagenes/jacket1.png" }, 
           { id: 2, name: "Rockstar", price: "900000", image: "/Imagenes/jacket2.png" }, 
@@ -29,7 +25,7 @@ function Shop() {
     };
 
     fetchProducts();
-  }, []); // El array vacío significa que se ejecuta una vez al montar el componente
+  }, []); 
 
   if (loading) return <p>Cargando productos...</p>;
   if (error) return <p>{error}</p>;
