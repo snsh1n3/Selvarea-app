@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    "/Imagenes/image1.png",
+    {`${process.env.PUBLIC_URL}/Imagenes/image1.png`},
   ];
 
   const showSlide = (index) => {
