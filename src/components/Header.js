@@ -55,10 +55,10 @@ function Header() {
             <img src={`${process.env.PUBLIC_URL}/Imagenes/search-icon.png`} alt="Buscar" className="nav-icon" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Buscar
           </button>
           <button onClick={handleOpenLoginModal}>
-            <img src="/Imagenes/profile-icon.png" alt="Perfil" className="nav-icon" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Perfil
+            <img src={`${process.env.PUBLIC_URL}/Imagenes/profile-icon.png`} alt="Perfil" className="nav-icon" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Perfil
           </button>
           <button onClick={handleCartClick}>
-            <img src="/Imagenes/cart-icon.png" alt="Carrito" className="nav-icon" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Carrito ({cartItems.length})
+            <img src={`${process.env.PUBLIC_URL}/Imagenes/cart-icon.png`} alt="Carrito" className="nav-icon" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Carrito ({cartItems.length})
           </button>
         </div>
       </nav>
