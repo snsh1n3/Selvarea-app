@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link as RouterLink } from 'react-router-dom'; // Usar Link como RouterLink para evitar conflictos
+import { Routes, Route, Link as RouterLink } from 'react-router-dom'; 
 import Header from './components/Header';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
