@@ -36,7 +36,7 @@ function Carousel() {
       <div className="features">
         <div><img src={`${process.env.PUBLIC_URL}/Imagenes/envios.png`} alt="Ícono de envíos nacionales e internacionales" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Envíos nacionales e internacionales</div>
         <div><img src={`${process.env.PUBLIC_URL}/Imagenes/productoColombiano.png`} alt="Ícono que representa un producto colombiano" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Producto 100% Colombiano</div>
-        <div><img src={`${process.env.PUBLIC_URL}/Imagenes/hechoaMano.png alt="Ícono que representa un producto hecho a mano" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Hecho a mano</div>
+        <div><img src={`${process.env.PUBLIC_URL}/Imagenes/hechoaMano.png`} alt="Ícono que representa un producto hecho a mano" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Hecho a mano</div>
       </div>
     </section>
   );
