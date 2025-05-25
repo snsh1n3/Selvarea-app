@@ -2,7 +2,7 @@
   "name": "selvarea-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://snsh1n3.github.io/selvarea-app/",
+  "homepage": "https://github.com/snsh1n3/selvarea-app",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
