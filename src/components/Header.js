@@ -41,7 +41,7 @@ function Header() {
       <nav>
         <div className="nav-left">
           <RouterLink to="/" className="logo">
-            <img src="/Imagenes/logo1.png" alt="Logo de Selvárea" className="logo-img" />
+            <img src="%PUBLIC_URL%/Imagenes/logo1.png" alt="Logo de Selvárea" className="logo-img" />
           </RouterLink>
         </div>
         <ul className="nav-center">
