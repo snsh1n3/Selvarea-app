@@ -52,7 +52,7 @@ function Header() {
         </ul>
         <div className="nav-right">
           <button onClick={handleOpenSearchModal}>
-            <img src="/Imagenes/search-icon.png" alt="Buscar" className="nav-icon" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Buscar
+            <img src={`${process.env.PUBLIC_URL}/Imagenes/search-icon.png`} alt="Buscar" className="nav-icon" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Buscar
           </button>
           <button onClick={handleOpenLoginModal}>
             <img src="/Imagenes/profile-icon.png" alt="Perfil" className="nav-icon" style={{ width: '33px', height: '33px', verticalAlign: 'middle' }} /> Perfil
