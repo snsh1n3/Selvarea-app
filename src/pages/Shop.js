@@ -12,9 +12,9 @@ function Shop() {
       try {
         // const response = await axios.get('https://my-json-server.typicode.com/your-username/your-repo/products');
         const mockProducts = [
-          { id: 1, name: "Love Birds", price: "800000", image: "/Imagenes/jacket1.png" }, 
-          { id: 2, name: "Rockstar", price: "900000", image: "/Imagenes/jacket2.png" }, 
-          { id: 3, name: "Roar", price: "1000000", image: "/Imagenes/jacket3.png" },
+          { id: 1, name: "Love Birds", price: "800000", image: `${process.env.PUBLIC_URL}/Imagenes/jacket1.png` },
+          { id: 2, name: "Rockstar", price: "900000", image: `${process.env.PUBLIC_URL}/Imagenes/jacket2.png` },
+          { id: 3, name: "Roar", price: "1000000", image: `${process.env.PUBLIC_URL}/Imagenes/jacket3.png` },
         ];
         setProducts(mockProducts);
         setLoading(false);
